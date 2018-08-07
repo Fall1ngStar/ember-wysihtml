@@ -63,7 +63,7 @@ export default Ember.Component.extend({
     updateContent(){
       const editorNode = this.$().find('.wysi-editor').get(0);
       const newContent = editorNode.innerHTML;
-      this.setAttr('content', newContent);
+      this.content = newContent;
     }
 
   },
